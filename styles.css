@@ -1,0 +1,15 @@
+/* Minimal theme */
+:root{--bg:#0b0c10;--text:#e6edf3;--muted:#9aa4ad;--accent:#cdd9e5;--line:#1c2330;--maxw:760px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";color:var(--text);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+main.stack{max-width:var(--maxw);margin:0 auto;padding:64px 20px;display:grid;gap:24px;min-height:100dvh;place-content:center;text-align:center}
+h1{margin:0;font-size:clamp(40px,8vw,80px);line-height:1.05;font-weight:900;letter-spacing:-0.02em}
+.sub{color:var(--muted);font-size:clamp(16px,2.5vw,18px)}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.links p{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center;margin:0}
+.sep{opacity:.4}
+/* footer removed */
+@media (max-width:640px){main.stack{gap:28px;padding:48px 16px}}
+
